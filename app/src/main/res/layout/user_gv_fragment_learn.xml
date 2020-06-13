@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newLesson"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        tools:ignore="ScrollViewCount">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewdsleson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/l17"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_list_class_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewdsleson"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvtest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_list_class_lesson"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/l18"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_list_class_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvtest"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/buttonAddTestGV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_stroke"
+            android:drawableLeft="@drawable/ic_add"
+            android:padding="10dp"
+            android:text="@string/l19"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/buttonAddLessonGV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_stroke"
+            android:drawableLeft="@drawable/ic_add"
+            android:padding="10dp"
+            android:text="@string/l20"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/wallet_hint_foreground_holo_light">
+
+        <TextView
+            android:id="@+id/text_view_back_to_user_gv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/text_view_name_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_view_back_to_user_gv"
+            android:text="Tên giáo viên"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_view_email_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_name_receiver"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/text_view_back_to_user_gv"
+            android:text="Email giáo viên"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewList_chatGV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_enter_chatGV"
+        android:layout_below="@+id/header4"
+        android:background="#A39E9E" />
+
+    <LinearLayout
+        android:id="@+id/layout_enter_chatGV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextChatGV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textShortMessage"
+            android:hint="Nhập nội dung chat"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/button_send_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

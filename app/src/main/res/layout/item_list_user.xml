@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_stroke"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_chat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_user_name_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Ngọc Hà"
+            android:textColor="#000"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/text_view_user_email_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hnn152151927@gmail.com"
+            android:textColor="#6F6C6C"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

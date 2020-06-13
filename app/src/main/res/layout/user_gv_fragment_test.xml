@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/wallet_hint_foreground_holo_light">
+
+        <TextView
+            android:id="@+id/text_view_back_to_learn_gv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="@string/l1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout_add_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header2"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edit_text_test"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:hint="@string/l2"
+                    android:inputType="textShortMessage"
+                    android:paddingLeft="10dp"
+                    android:text="Test: " />
+
+                <Button
+                    android:id="@+id/button_pick_date_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:text="@string/l3" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_pick_class_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_stroke"
+                android:text="@string/l5" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/edit_text_topic_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Chủ đề"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Chọn danh sách ảnh"
+                android:textSize="17sp"
+                android:textColor="#000" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_list_images_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/button_add_image_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_list_images_test"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_white_stroke"
+                    android:drawableLeft="@drawable/ic_add"
+                    android:paddingRight="10dp"
+                    android:text="Thêm ảnh" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/button_upload_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:padding="10dp"
+                    android:text="@string/l15"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/button_cancel_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:padding="10dp"
+                    android:text="@string/l16"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/wallet_hint_foreground_holo_light">
+
+        <TextView
+            android:id="@+id/textViewBackToLesson"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="@string/l1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Footer"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layoutLearnGV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/editTextLessonGV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:hint="@string/l2"
+                    android:paddingLeft="10dp"
+                    android:text="Lesson: " />
+
+                <Button
+                    android:id="@+id/buttonPickDateGV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:text="@string/l3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewDateGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/l4" />
+
+            <Button
+                android:id="@+id/buttonPickClassGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_stroke"
+                android:text="@string/l5" />
+
+            <EditText
+                android:id="@+id/editTextBookGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/l6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/editTextTopicGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/l7"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/l8"
+                android:textSize="17sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_listword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/buttonAddWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_listword"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_white_stroke"
+                    android:drawableLeft="@drawable/ic_add"
+                    android:paddingRight="10dp"
+                    android:text="@string/l9" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/l10"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editTextActivities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_stroke"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLines="10"
+                android:paddingLeft="10dp"
+                android:scrollbars="vertical"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/l11"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editTextHomeWorksGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_stroke"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="5"
+                android:paddingLeft="10dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/l12"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_white_stroke"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/l13"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/bg_white_stroke"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/l14"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!--            bang status-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/layout_litstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBarUploadGV"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/buttonUploadLessonGV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:padding="10dp"
+                    android:text="@string/l15"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonCancelLessonGV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_stroke"
+                    android:padding="10dp"
+                    android:text="@string/l16"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile_ph"
+            android:icon="@drawable/ic_user2"
+            android:title="@string/dw1" />
+        <item
+            android:id="@+id/nav_learn_ph"
+            android:icon="@drawable/ic_learn"
+            android:title="@string/dw4" />
+        <item
+            android:id="@+id/nav_tkb_ph"
+            android:icon="@drawable/ic_timetable"
+            android:title="@string/dw3"/>
+        <item
+            android:id="@+id/nav_chat_ph"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/dw5" />
+        <item
+            android:id="@+id/nav_logout_ph"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/dw6" />
+    </group>
+
+</menu>

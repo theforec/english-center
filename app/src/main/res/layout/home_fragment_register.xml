@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_register"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#561823"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRUNG TÂM ANH NGỮ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="JAXTINA ENGLISH CENTER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_white"
+                    android:padding="10dp"
+                    android:text="TOP 3 TRUNG TÂM TIẾNG ANH HÀNG ĐẦU VIỆT NAM"
+                    android:textColor="#D50000"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_checked"
+                    android:drawablePadding="5dp"
+                    android:text="Tiên phong đào tạo Toàn Diện 4 Kĩ Năng Nghe Nói Đọc Viết tại Việt Nam"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_checked"
+                    android:drawablePadding="5dp"
+                    android:text="Chương trình học Chuẩn Quốc Tế với cam kết đầu ra bằng Hợp Đồng đào tạo"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_checked"
+                    android:drawablePadding="5dp"
+                    android:text="Xây dựng chương trình học và lộ trình học riêng biệt cho từng học viên khi đăng ký"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_checked"
+                    android:drawablePadding="5dp"
+                    android:text="Đội ngũ giáo viên - trợ giảng giàu kinh nghiệm hỗ trợ 24/7"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_checked"
+                    android:drawablePadding="5dp"
+                    android:text="06 năm kinh nghiệm với 96% học viên đạt mục tiêu đề ra"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_registration_form"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ĐĂNG KÝ NHẬN TƯ VẤN MIỄN PHÍ LỘ TRÌNH HỌC TIẾNG ANH TOÀN DIỆN"
+                    android:textColor="#B71C1C"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextNameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edittext_registration"
+                    android:hint="Họ và tên"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColorHint="#676767" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext_registration"
+                    android:hint="Nhập Số điện thoại"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColorHint="#676767" />
+
+                <EditText
+                    android:id="@+id/editTextEmailRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext_registration"
+                    android:hint="Nhập Email"
+                    android:inputType="textEmailSubject"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColorHint="#676767" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext_registration"
+                    android:gravity="start"
+                    android:id="@+id/buttonAddressRegister"
+                    android:padding="10dp"
+                    android:text="Chọn cơ sở gần nhất với bạn"
+                    android:textAllCaps="false"
+                    android:textColor="#676767"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/buttonSendInfoRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_button_sendinfo"
+                    android:text="GỬI THÔNG TIN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
